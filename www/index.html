@@ -3,11 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#6c63ff">
+  <meta name="theme-color" content="#667eea">
   <title>Quiz Master</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Quiz Master!</h1>
-  <p>Your quiz adventure starts here.</p>
+
+  <div class="container">
+
+    <div id="home">
+      <h1>🎯 Quiz Master</h1>
+      <p>Test your knowledge and have fun!</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+      <p id="progress"></p>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+    </div>
+
+    <div id="result" style="display:none;">
+      <h1>🎉 Quiz Completed!</h1>
+      <p>Your Final Score</p>
+      <h2 id="finalScore"></h2>
+      <button onclick="startQuiz()">Play Again</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
